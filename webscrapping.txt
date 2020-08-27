@@ -1,0 +1,101 @@
+WEB SCRAPING
+WORKSHEET – 1
+
+In Q1 to Q9, only one option is correct, Choose the correct option:
+1.	Which of the following extracts information from user generated content?
+A) Java script tagging			B) Web scraping
+C) A/B testing				D) MROCs
+
+B) Web scraping
+
+2.	Which of the following is not a web scraping library in python?
+A) selenium				B) Beautiful soup
+C) Requests				C) scrapy
+
+C) Requests
+
+3.	Selenium tests __________?
+A) Browser based applications		B) DOS applications
+C) GUI applications			D) All of the above
+
+A)	Browser based applications
+
+4.	Task of crawling is performed by a complex software which is known as:
+A) Scraper				B) Crawler
+C) Boat					D) Spider
+
+A) B) and C)
+
+5.	Which of the following commands is used to access name of a tag in Beautiful Soup?
+A) tag.attrs				B) tag.name
+C) tag,id				C) tag[‘id’]
+
+B)	tag,name
+
+6.	Which of the following is the default parser in Beautiful Soup?
+A) html.parser				B) html5lib
+C) lxml					D) lxml-xml
+
+C)	Lxml
+
+7.	In selenium the webdriver is used to?
+A) design a test using selenese
+B) test a web application on firefox only
+C) execute tests on HtmlUnit browser
+D) to download any content from a webpage
+
+C) execute tests on HtmlUnit browser
+
+8.	In selenium, driver.find_elements_by_xpath(‘given xpath’) returns:
+A) the first webelement associated with the ‘given xpath’
+B) the url of first webelement associated with the ‘given xpath’
+C) the list of all webelements associated with the ‘given xpath’
+D) all the attributes of the first webelement associated with the ‘given xpath’
+
+C) the list of all webelements associated with the ‘given xpath’
+
+9.	The script ‘window.scrollBy(0,a) scrolls the webpage by?
+A) ‘a’ number of horizontal spaces
+B) ‘a’ number of lines
+C) ‘a’ number of pixels horizontally
+D) ‘a’ number of pixels vertically
+
+D)
+In Q10, more than one options are correct, Choose all the correct options:
+10.	Which of the following is(are) tags of HTML?
+A) <a>					B) <b>
+C) <image>				D) <href>
+
+A)	<a>  and B) <b>
+Q10 to Q13 are subjective answer type questions, Answer them briefly.
+11.	What is the main difference between a web scraper and a web crawler?
+		Though sometimes the two terms are used interchangeably the main difference is that web crawlers usually focus on indexing the web while web scrapers extract or "scrape" data from webpages.
+		There is a fair bit of overlap between the web crawlers and web scrapers. Web crawlers work by browsing to a series of webpages and analyzing their contents for links to other webpages. The links to the other webpages are then followed and searched for more links. The process of following and recording these links is referred to as “crawling.” While crawling through various web pages can reveal useful information about the structure of the web, extracting data from those sites, or “web scraping”, captures the content of those pages which can then be analyzed to reveal more information about the crawled pages. Many web crawlers utilize web scraping to contextualize the pages that they have crawled.
+		A web scraper's main purpose is to extract data from webpages. Web scrapers often have the ability to browse to different pages and follow links. Though web scrapers can crawl to different pages their primary purpose is scraping the data on those pages, not indexing the web.
+
+12.	What is ‘robots.txt’ file? What is the use of ‘robots.txt’ file?
+		A robots.txt file is a simple text file which webmasters can create to tell web crawlers which parts of a website should be crawled and which should not. The file is stored in the main directory (root) on the server. When a crawler arrives at a website, it first reads the robots.txt file to determine which parts of the website it should crawl and which parts it should ignore, according to the so-called Robots Exclusion Standard Protocol. You don’t have to create a robots.txt file but it’s often advisable to do so.
+		With a robots.txt file, it’s possible to exclude entire directories from crawls. If necessary, you can even block bots from an entire domain.
+
+13.	What are static and dynamic web pages?
+
+		Web pages can be either static or dynamic. "Static" means unchanged or constant, while "dynamic" means changing or lively. Therefore, static Web pages contain the same prebuilt content each time the page is loaded, while the content of dynamic Web pages can be generated on-the-fly.
+Standard HTML pages are static Web pages. They contain HTML code, which defines the structure and content of the Web page. Each time an HTML page is loaded, it looks the same. The only way the content of an HTML page will change is if the Web developer updates and publishes the file.
+Other types of Web pages, such as PHP, ASP, and JSP pages are dynamic Web pages. These pages contain "server-side" code, which allows the server to generate unique content each time the page is loaded. For example, the server may display the current time and date on the Web page. It may also output a unique response based on a Web form the user filled out. Many dynamic pages use server-side code to access database information, which enables the page's content to be generated from information stored in the database. Websites that generate Web pages from database information are often called database-driven websites.
+		You can often tell if a page is static or dynamic simply by looking at the page's file extension in the URL, located in the address field of the Web browser. If it is ".htm" or ".html," the page is probably static. If the extension is ".php," ".asp," or ".jsp," the page is most likely dynamic. While not all dynamic Web pages contain dynamic content, most have at least some content that is generated on-the-fly.
+
+Q14 and Q15 are programming practice questions. Solve it using JUPYTER NOTEBOOK and paste the solution in your answer sheets.
+14.	Write a python program to check whether a webpage contains a title or not.
+ 
+
+
+
+
+
+
+15.	Write a python program to access the search bar and search button on images.google.com.
+
+
+
+ 
+
