@@ -1,0 +1,55 @@
+Worksheet-1
+
+SQL
+
+1. A) Create D) ALTER
+
+2. A) Update C) Select B) Delete
+
+3. B) Structured Query Language
+
+4. B) Data Definition Language
+
+5. A) Data Manipulation Language
+
+6. C) Create Table A (B int, C float)
+
+7. B) Alter Table A ADD COLUMN D float
+
+8. B) Alter Table A Drop Column D 
+
+9. B) Alter Table A Alter Column D int
+
+10. B) Alter table (B primary key)
+
+11. 
+A Data Warehousing (DW) is process for collecting and managing data from varied sources to provide meaningful business insights. A Data warehouse is typically used to connect and analyze business data from heterogeneous sources. The data warehouse is the core of the BI system which is built for data analysis and reporting.
+
+It is a blend of technologies and components which aids the strategic use of data. It is electronic storage of a large amount of information by a business which is designed for query and analysis instead of transaction processing. It is a process of transforming data into information and making it available to users in a timely manner to make a difference.
+
+12. 
+OLTP and OLAP: The two terms look similar but refer to different kinds of systems. Online transaction processing (OLTP) captures, stores, and processes data from transactions in real time. Online analytical processing (OLAP) uses complex queries to analyze aggregated historical data from OLTP systems.
+
+13. 
+There are three prominent data warehouse characteristics:
+
+Integrated: The way data is extracted and transformed is uniform, regardless of the original source.
+Time-variant: Data is organized via time-periods (weekly, monthly, annually, etc.).
+Non-volatile: A data warehouse is not updated in real-time. It is periodically updated via the uploading of data, protecting it from the influence of momentary change.
+
+
+14. 
+
+In computing, the star schema is the simplest style of data mart schema and is the approach most widely used to develop data warehouses and dimensional data marts. The star schema consists of one or more fact tables referencing any number of dimension tables. The star schema is an important special case of the snowflake schema, and is more effective for handling simpler queries.
+
+The star schema gets its name from the physical model's resemblance to a star shape with a fact table at its center and the dimension tables surrounding it representing the star's points.
+
+15. 
+
+Set Theory as a Language
+By Vangie Beal Short for Set Theory as a Language (or Set Language), SETL is a high-level programming language that's based on the mathematical theory of sets. It was developed in the early 1970's by mathematician Professor J.
+SETL provides two basic aggregate data types: unordered sets, and sequences (the latter also called tuples). The elements of sets and tuples can be of any arbitrary type, including sets and tuples themselves. Maps are provided as sets of pairs (i.e., tuples of length 2) and can have arbitrary domain and range types. Primitive operations in SETL include set membership, union, intersection, and power set construction, among others.
+
+SETL provides quantified boolean expressions constructed using the universal and existential quantifiers of first-order predicate logic.
+
+SETL provides several iterators to produce a variety of loops over aggregate data structures.
