@@ -1,0 +1,64 @@
+MACHINE LEARNING
+WORKSHEET - 2
+
+1. C.
+
+2. B
+
+3. C.
+
+4. B.
+
+5. B.
+
+6. A. and D.
+
+7. A and D
+
+8. A and C
+
+9. A and B
+
+10. 
+
+Both R2 and the adjusted R2 give you an idea of how many data points fall within the line of the regression equation. However, there is one main difference between R2 and the adjusted R2: R2 assumes that every single variable explains the variation in the dependent variable. The adjusted R2 tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable.
+The adjusted R2 will penalize you for adding independent variables (K in the equation) that do not fit the model. In regression analysis, it can be tempting to add more variables to the data as you think of them. Some of those variables will be significant, but you can’t be sure that significance is just by chance. The adjusted R2 will compensate for this by that penalizing you for those extra variables.
+
+While values are usually positive, they can be negative as well. This could happen if your R2 is zero; After the adjustment, the value can dip below zero. This usually indicates that your model is a poor fit for your data. Other problems with your model can also cause sub-zero values, such as not putting a constant term in your model.
+
+11. 
+Lasso regression stands for Least Absolute Shrinkage and Selection Operator. It adds penalty term to the cost function. This term is the absolute sum of the coefficients. As the value of coefficients increases from 0 this term penalizes, cause model, to decrease the value of coefficients in order to reduce loss. The difference between ridge and lasso regression is that it tends to make coefficients to absolute zero as compared to Ridge which never sets the value of coefficient to absolute zero.
+In Ridge regression, we add a penalty term which is equal to the square of the coefficient. The L2 term is equal to the square of the magnitude of the coefficients. We also add a coefficient  \lambda  to control that penalty term. In this case if  \lambda  is zero then the equation is the basic OLS else if  \lambda \, > \, 0 then it will add a constraint to the coefficient. As we increase the value of \lambda this constraint causes the value of the coefficient to tend towards zero. This leads to both low variance (as some coefficient leads to negligible effect on prediction) and low bias (minimization of coefficient reduce the dependency of prediction on a particular variable).
+
+12. 
+In statistics, the variance inflation factor (VIF) is the quotient of the variance in a model with multiple terms by the variance of a model with one term alone.[1] It quantifies the severity of multicollinearity in an ordinary least squares regression analysis. It provides an index that measures how much the variance (the square of the estimate's standard deviation) of an estimated regression coefficient is increased because of collinearity.
+
+13.
+When dataset values features vary in units, magnitude and range, scaling reduces the values within a normal scale or standard scale. This helps in giving equal weightage to all values in the dataset. The two methods of scaling are minmax scaling (this brings all values between 0 and 1) and standard scaling (this brings all values between -1 and +1, a standard normal distribution).
+
+14. 
+The various methods used to calculate the results of prediction are:-
+a. Mean Squared Error (MSE)
+It is the average of squared differences between the target value and the predicted value by the model.
+
+b. Root Mean Squared Error(RMSE)
+It is the square root of the averaged squared differences between the target value and the predicted value by the model.
+
+c. Mean Absolute Error(MAE)
+It is the absolute difference between the target value and the value predicted by the model. 
+
+d. R square
+ Coefficient of Determination or R² is another metric used for evaluating the performance of a regression model. The metric helps us to compare our current model with a constant baseline and tells us how much our model is better. The constant baseline is chosen by taking the mean of the data and drawing a line at the mean. R² is a scale-free score that implies it doesn't matter whether the values are too large or too small, the R² will always be less than or equal to 1.
+
+e. Adjusted R square
+Adjusted R² depicts the same meaning as R² but is an improvement of it. R² suffers from the problem that the scores improve on increasing terms even though the model is not improving which may misguide the researcher. Adjusted R² is always lower than R² as it adjusts for the increasing predictors and only shows improvement if there is a real improvement.t
+
+15. 
+accuracy=true prediction/total sample
+=2200/2500
+accuracy=0.88
+
+sensivity=TP/(FN+TP)=1000/(1050)=0.95
+specificity=TN/(FP+TN)=1200/(250+1200)=0.83
+precision=TP/(TP+FP)=1000/(1000+250)=0.80
+recall=TP/(TP+FN)=1000/(1000+50)=0.95
