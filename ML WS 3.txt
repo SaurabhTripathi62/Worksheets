@@ -1,0 +1,70 @@
+Machine Learning 
+Worksheet 3
+
+1. Linear, polynomial and RBF kernels in SVM
+In SVM, linear is used to separate the classes by drawing a linear line. This is useful when the classes are linerally separable. In case of n dimensions, the model uses hyperplane to divide the classes.
+
+A  rbf  kernel is used for SVM to become non linear. It uses two values, gamma and C. Gamma value can be thought as spread of the kernel and when Gamma parameter is low, the curve of the decision boundary is low and when gamma is high the decision boundary is high.
+C is a parameter which is a penalty for misclassifying a data point. When c is small, the classifier is okay with misclassified data points (high bias, low variance) When c is large, the classifier is heavily penalized for misclassified data and therefore bends over backwards avoid any misclassified data points (low bias, high variance).
+
+A polynomial kernel is a kernel function
+For degree-d polynomials, the polynomial kernel is defined as
+
+2. 
+R Squared Error is a better measure of goodness of fit in regression than Residual Sum of Squares. 
+Residual Sum of Squares just gives the sum of squared differences between the actual and predicted values. 
+Whereas the R2 squared error takes into account the square of residues ie., differences between actual and predicted values over the square of the differences between actual and average predicted values
+R2 Square error explains the proportion of variance of the independent variable over dependent variable.
+
+3. 
+Total sum of squares is the square of sum of difference between actual and predicted.
+RSS is the square of residues ie., differences between actual and predicted values
+RSS=∑ni=0(ϵi)2=∑ni=0(yi−(α+βxi))2
+ESS=∑(yi-y)**2
+
+4. 
+Gini Impurity index
+Gini Impurity is the probability of incorrectly classifying a randomly chosen element in the dataset if it were randomly labeled according to the class distribution in the dataset. It’s calculated as
+G =∑C(i=1) p(i)∗(1−p(i))
+where C is the number of classes, p is probability of randomly picking an element of class i.
+When training a decision tree, the best split is chosen by maximizing the Gini Gain, which is calculated by subtracting the weighted impurities of the branches from the original impurity.
+
+5. Are unregularized decision-trees prone to overfitting? If yes, why?
+Over-fitting is the phenomenon in which the learning system tightly fits the given training data so much that it would be inaccurate in predicting the outcomes of the untrained data.
+In decision trees, over-fitting occurs when the tree is designed so as to perfectly fit all samples in the training data set. Thus it ends up with branches with strict rules of sparse data. Thus this effects the accuracy when predicting samples that are not part of the training set.
+One of the methods used to address over-fitting in decision tree is called pruning which is done after the initial training is complete. In pruning, you trim off the branches of the tree, i.e., remove the decision nodes starting from the leaf node such that the overall accuracy is not disturbed. This is done by segregating the actual training set into two sets: training data set, D and validation data set, V. Prepare the decision tree using the segregated training data set, D. Then continue trimming the tree accordingly to optimize the accuracy of the validation data set, V.
+
+6. What is an ensemble technique in machine learning?
+Ensemble technique is a technique in machine learning where we use train multiple models to get best accuracy for the dataset.
+
+7. What is the difference between Bagging and Boosting techniques?
+In Bagging, the random samples are selected and are trained with algorithms. The average in case of regression or the mode in case of classification will be used for final result.
+Boosting techniques train the model and add weights for the data to scale the performance of the model.
+
+8. what is out-of-bag error in random forests?
+The out-of-bag (OOB) error is the average error for each calculated using predictions from the trees that do not contain in their respective bootstrap sample. This allows the RandomForestClassifier to be fit and validated whilst being trained 
+
+9. 
+Cross validation is a technique where we use entire dataset for training and testing. The data will be divided in to k folds and in each fold, one portion will go to training and the other to test. Similarly all folds different data will go to training and testing. 
+This is used so that the model is trained and tested by entire data and we can get a better picture of understanding on how the model is performing on entire dataset.
+The score obtained in cross validation is compared with prediction accuracy score to find any major differences.
+
+10. There are different parameters that a model use for prediction. To get best results, we will be required to randomly check all parameter combinations with the data. To avoid this manual time taking process, we have hyper parameter tuning in ML like Gridsearchcv or randomsearchcv which will check the parameters on the model and give the best parameters which gives best results.
+
+11. 
+If we have large learning rate, then the weights keeps changing rapidly and the gradient descent will not able to achieve the global minima. 
+
+12. 
+The aim of any model should be low bias and low variance. When the bias is low and variance is high, the model is overfitting. 
+When the bias is high and variance is high, then the model is underfitting. When both the bias and variance is low, the model is good fitting.
+
+13. 
+Regularization method is required to reduce overfitting of the model.
+
+14. 
+The main differences therefore are that Gradient Boosting is a generic algorithm to find approximate solutions to the additive modeling problem, while AdaBoost can be seen as a special case with a particular loss function. Hence, gradient boosting is much more flexible.
+
+Second, AdaBoost can be interepted from a much more intuitive perspective and can be implemented without the reference to gradients by reweighting the training samples based on classifications from previous learners.
+
+15. 
+For non linear data, logistic regression is not a good model as it uses linear equation to find the best fit line for dividing the classes which cannot be found in case of non-linear data and the model fails to give good results.
